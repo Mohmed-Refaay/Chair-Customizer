@@ -7,7 +7,7 @@ const Intro: React.FC<{ done: () => void }> = ({ done }) => {
 
   useEffect(() => {
     if (wrapperRef.current && textRef.current) {
-      const tl = gsap
+      gsap
         .timeline()
         .to(textRef.current, {
           opacity: 1,

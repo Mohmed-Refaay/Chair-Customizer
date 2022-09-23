@@ -1,11 +1,6 @@
 import { useGLTF } from "@react-three/drei";
 import { useEffect } from "react";
-import {
-  Group,
-  Mesh,
-  MeshStandardMaterial,
-  MeshPhongMaterial,
-} from "three";
+import { Mesh, MeshStandardMaterial, MeshPhongMaterial } from "three";
 
 export const useLoadChairModel = () => {
   const { scene } = useGLTF("/models/chair.glb");
