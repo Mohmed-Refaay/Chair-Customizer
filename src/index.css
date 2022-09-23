@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .part {
+    @apply outline-2 outline-red-600 transition-all w-[70px] h-[70px] bg-gray-400 cursor-pointer p-3 hover:outline hover:translate-x-1;
+  }
+}
