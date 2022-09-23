@@ -15,6 +15,6 @@ html {
 
 @layer components {
   .part {
-    @apply outline-2 outline-red-600 transition-all w-[70px] h-[70px] bg-gray-400 cursor-pointer p-3 hover:outline hover:translate-x-1;
+    @apply outline-2 outline-red-600 transition-all w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-gray-400 cursor-pointer p-3 hover:outline hover:translate-x-1;
   }
 }

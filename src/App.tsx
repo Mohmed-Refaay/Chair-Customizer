@@ -54,10 +54,10 @@ function App() {
         ))}
       </div>
 
-      <div className="z-20 absolute flex bottom-0 left-0">
+      <div className="z-20 absolute flex md:bottom-0 left-0 overflow-x-scroll w-full scroll-smooth">
         {covers.map((texture) => (
           <div
-            className="w-12 h-12 cursor-pointer drop-shadow-lg"
+            className="w-12 h-12 cursor-pointer drop-shadow-lg grow-0 shrink-0"
             style={{
               backgroundColor:
                 texture.type === "color"
@@ -71,6 +71,7 @@ function App() {
           >
             {texture.type === "texture" && (
               <img
+                className="w-full h-full"
                 src={`/textures/${texture.image}`}
                 alt={texture.image}
               />

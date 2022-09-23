@@ -27,7 +27,10 @@ const Intro: React.FC<{ done: () => void }> = ({ done }) => {
       ref={wrapperRef}
       className="bg-white w-full h-screen fixed z-50 uppercase flex justify-center items-center"
     >
-      <h3 ref={textRef} className="opacity-0 translate-y-[300px]">
+      <h3
+        ref={textRef}
+        className="opacity-0 translate-y-[300px] text-center px-3"
+      >
         Idea by: tympanus.net -- Made by Mohamed Refaay
       </h3>
     </div>
